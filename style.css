@@ -1,0 +1,103 @@
+:root{
+    --first-color: chocolate;
+    --input-color: #80868B;
+    --border-color: #DADCE0;
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    font-size: 1.2rem;
+    background-color: chocolate;
+    color: azure;
+    padding-left: 5px;
+}
+
+header img{
+
+}
+
+.l-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form{
+    width: 360px;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.form_title{
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.form-div{
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+
+.form_input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-size: normal;
+    border: 1px solid var(--border-color);
+    border-radius: .5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+}
+
+.form_label{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 .25rem;
+    background-color: #fff;
+    color: var(--input-color);
+    font-size: normal;
+    transition: .3s;
+}
+
+/* Input move up label */
+
+.form_input:focus + .form_label{
+    top: -.5rem;
+    left: -.8rem;
+    color: var(--first-color);
+    font-size: small;
+    font-weight: 500;
+    z-index: 10;
+}
+
+/* Input focus label */
+
+.form_input:not(:placeholder-shown).form_input:not(:focus) + .form_label{
+    top: -.5rem;
+    left: -.8rem;
+    font-size: small;
+    font-weight: 500;
+    z-index: 10;
+}
+
+/* Input focus */
+
+.form_input:focus{
+    border: 1.5px solid var(--first-color);
+}

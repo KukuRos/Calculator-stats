@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Calculador</title>
 </head>
@@ -15,53 +16,73 @@
         <img src="" alt="">
     </header>
 
-    <main>
-        <div>
-            <table>
-                (aca van los stats)
-            </table>
-        </div>
-        <div>
-            <div>
-                <p>Conjuros</p>
-                <form action="">
-                    <div>
-                        <select name="conjuro" id="InputSpells">
-                            <option value="Thalera">Thalera</option>
-                            <option value="Brism">Brism</option>
-                            <option value="Arcael">Arcael</option>
-                            <option value="Glancie">Glancie</option>
-                            <option value="Lumis">Lumis</option>
-                        </select>
-                    </div>
-                    <div>
-                        <button>Resultado</button>
-                    </div>
-                </form>
-                <p>Qtty dice</p>
-                <p>Nomenclatura</p>
+    <div class="l-form">
+        <form action="" class="form">
+            <h1 class="form_title">Stats</h1>
+
+            <div class="form-div">
+                <input type="text" class="form_input" placeholder="">
+                <label for="" class="form_label">Fuerza</label>
             </div>
-            <div>
-                <p>Técnicas</p>
-                <form action="">
-                    <div>
-                        <select name="tecnica" id="InputTechnics">
-                            <option value="Tolerar">Tolerar</option>
-                            <option value="GolpePesado">Golpe pesado</option>
-                            <option value="Sprint">Sprint</option>
-                            <option value="Deforestar">Deforestar</option>
-                            <option value="Prestidigitar">Prestidigitar</option>
-                        </select>
-                    </div>
-                    <div>
-                        <button>Resultado</button>
-                    </div>
-                </form>
-                <p>Qtty dice</p>
-                <p>Nomenclatura</p> 
+            <div class="form-div">
+                <input type="text" class="form_input" placeholder="">
+                <label for="" class="form_label">Resistencia</label>
             </div>
-        </div>
-    </main>
+            <div class="form-div">
+                <input type="text" class="form_input" placeholder="">
+                <label for="" class="form_label">Agilidad</label>
+            </div>
+            <div class="form-div">
+                <input type="text" class="form_input" placeholder="">
+                <label for="" class="form_label">Percepción</label>
+            </div>
+            <div class="form-div">
+                <input type="text" class="form_input" placeholder="">
+                <label for="" class="form_label">Inteligencia</label>
+            </div>
+        
+            <div>
+                <div>
+                    <h1 class="form_title">Conjuros</h1>
+                    <form action="" class="form">
+                        <div class="form-div">
+                            <select name="conjuro" id="InputSpells">
+                                <option value="Thalera">Thalera</option>
+                                <option value="Brism">Brism</option>
+                                <option value="Arcael">Arcael</option>
+                                <option value="Glancie">Glancie</option>
+                                <option value="Lumis">Lumis</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button>Resultado</button>
+                        </div>
+                    </form>
+                    <p>Qtty dice</p>
+                    <p>Nomenclatura</p>
+                </div>
+                <div>
+                    <h1 class="form_title">Técnicas</h1>
+                    <form action="" class="form">
+                        <div class="form-div">
+                            <select name="tecnica" id="InputTechnics">
+                                <option value="Tolerar">Tolerar</option>
+                                <option value="GolpePesado">Golpe pesado</option>
+                                <option value="Sprint">Sprint</option>
+                                <option value="Deforestar">Deforestar</option>
+                                <option value="Prestidigitar">Prestidigitar</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button>Resultado</button>
+                        </div>
+                    </form>
+                    <p>Qtty dice</p>
+                    <p>Nomenclatura</p> 
+                </div>
+            </div>
+        </form>
+    </div>
 
 </body>
 </html>
