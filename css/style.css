@@ -13,6 +13,10 @@
 body{
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
+    background-image: url(../assets/background.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color:#ebe4db;
 }
 
 h1{
@@ -20,10 +24,43 @@ h1{
 }
 
 header{
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 1.5rem;
     font-size: 1.2rem;
     background-color: chocolate;
-    color: azure;
-    padding-left: 5px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo{
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.nav_links{
+    padding-top: .5rem;
+}
+
+.nav_links--ico{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-right: 1rem;
 }
 
 .l-form{
@@ -31,7 +68,7 @@ header{
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin: 2rem 2rem 2rem 2rem;
+    margin: 6rem 2rem 1rem 2rem;
 }
 
 .form{
@@ -39,6 +76,7 @@ header{
     padding: 4rem 2rem;
     border-radius: 1rem;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    background-color: #fff;
 }
 
 .form_title{
@@ -52,16 +90,36 @@ header{
     margin-bottom: 1.5rem;
 }
 
+.form-div option{
+    font-size: 1rem;
+}
+
 .form_input{
     position: absolute;
     top: 0;
     left: 0;
+    width: 50%;
     height: 100%;
     font-size: 1rem;
     border: 1px solid var(--border-color);
     border-radius: .5rem;
     outline: none;
     padding: 1rem;
+    background: none;
+    z-index: 1;
+}
+
+.form_input--option{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: .5rem;
+    outline: none;
+    padding: .9rem;
     background: none;
     z-index: 1;
 }
@@ -75,6 +133,25 @@ header{
     color: var(--input-color);
     font-size: 1rem;
     transition: .3s;
+}
+
+.form_button{
+    display: block;
+    margin-left: auto;
+    padding: .75rem 2rem;
+    outline: none;
+    border: none;
+    background-color: var(--first-color);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.form_button:hover{
+    box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
 }
 
 /* Input move up label */
@@ -102,4 +179,17 @@ header{
 
 .form_input:focus{
     border: 1.5px solid var(--first-color);
+}
+
+
+.result{
+    inline-size: 100%;
+    block-size: 2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-block-end: 1px solid var(--first-color);
+    border-radius: 1rem;
+    margin-top: 2rem;
 }

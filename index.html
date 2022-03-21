@@ -7,20 +7,27 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
     <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1600px)">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Calculador</title>
 </head>
 
 <body>
 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
     <header>
-        <h1>Calculadora de RE</h1>
-        <img src="" alt="">
+        <h1 class="header_logo">Calculadora</h1>
+        <div class="nav_img">
+        <img src="./assets/linear-dice.svg" alt="">
+        </div>
+        <div></div>
     </header>
+
+
     <div class="idk">
     <div class="l-form">
         <form action="" class="form">
-            <h1 class="form_title">Stats</h1>
+            <h1 class="form_title">Atributos</h1>
 
             <div class="form-div">
                 <input type="text" class="form_input" placeholder=" ">
@@ -54,7 +61,7 @@
                     <h1 class="form_title">Conjuros</h1>
                     <form action="" class="form">
                         <div class="form-div">
-                            <select name="conjuro" id="InputSpells">
+                            <select class="form_input--option" name="conjuro" id="InputSpells">
                                 <option value="Thalera">Thalera</option>
                                 <option value="Brism">Brism</option>
                                 <option value="Arcael">Arcael</option>
@@ -66,8 +73,8 @@
                             <input type="submit" class="form_button" value="Calcular">
                         </div>
                     </form>
-                    <p>Qtty dice</p>
-                    <p>Nomenclatura</p>
+                    <p class="result">Qtty dice</p>
+                    <p class="result">Nomenclatura</p>
                 </div>
             </div>
         </form>
@@ -79,7 +86,7 @@
                 <h1 class="form_title">Técnicas</h1>
                 <form action="" class="form">
                     <div class="form-div">
-                        <select name="tecnica" id="InputTechnics">
+                        <select class="form_input--option" name="tecnica" id="InputTechnics">
                             <option value="Tolerar">Tolerar</option>
                             <option value="GolpePesado">Golpe pesado</option>
                             <option value="Sprint">Sprint</option>
@@ -91,8 +98,8 @@
                         <input type="submit" class="form_button" value="Calcular">
                     </div>
                 </form>
-                <p>Qtty dice</p>
-                <p>Nomenclatura</p> 
+                <p class="result">Qtty dice</p>
+                <p class="result">Nomenclatura</p> 
             </div>
         </form>
     </div>
