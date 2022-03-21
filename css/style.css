@@ -188,8 +188,8 @@ img{
     line-height: 1.6rem;
     text-align: center;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     border-block-end: 1px solid var(--first-color);
-    border-radius: 1rem;
+    border-radius: .5rem;
     margin-top: 2rem;
 }

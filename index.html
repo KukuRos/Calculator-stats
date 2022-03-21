@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
     <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1600px)">
     <link rel="stylesheet" href="./css/style.css">
+    
     <title>Calculador</title>
 </head>
 
@@ -30,23 +31,23 @@
             <h1 class="form_title">Atributos</h1>
 
             <div class="form-div">
-                <input type="text" class="form_input" placeholder=" ">
+                <input type="text" class="form_input" placeholder=" " id="fuerza">
                 <label for="" class="form_label">Fuerza</label>
             </div>
             <div class="form-div">
-                <input type="text" class="form_input" placeholder=" ">
+                <input type="text" class="form_input" placeholder=" " id="resistencia">
                 <label for="" class="form_label">Resistencia</label>
             </div>
             <div class="form-div">
-                <input type="text" class="form_input" placeholder=" ">
+                <input type="text" class="form_input" placeholder=" " id="agilidad">
                 <label for="" class="form_label">Agilidad</label>
             </div>
             <div class="form-div">
-                <input type="text" class="form_input" placeholder=" ">
+                <input type="text" class="form_input" placeholder=" " id="percepcion">
                 <label for="" class="form_label">Percepción</label>
             </div>
             <div class="form-div">
-                <input type="text" class="form_input" placeholder=" ">
+                <input type="text" class="form_input" placeholder=" " id="inteligencia">
                 <label for="" class="form_label">Inteligencia</label>
             </div>
         
@@ -62,19 +63,20 @@
                     <form action="" class="form">
                         <div class="form-div">
                             <select class="form_input--option" name="conjuro" id="InputSpells">
-                                <option value="Thalera">Thalera</option>
-                                <option value="Brism">Brism</option>
-                                <option value="Arcael">Arcael</option>
-                                <option value="Glancie">Glancie</option>
-                                <option value="Lumis">Lumis</option>
+                                <option value="Thalera" id="thalera">Thalera</option>
+                                <option value="Brism" id="brism">Brism</option>
+                                <option value="Arcael" id="arcael">Arcael</option>
+                                <option value="Glancie" id="glancie">Glancie</option>
+                                <option value="Fulgor" id="fulgor">Fulgor</option>
+                                <option value="Burbaj" id="burbaj">Burbaj</option>
                             </select>
                         </div>
                         <div>
-                            <input type="submit" class="form_button" value="Calcular">
+                            <button type="button" class="form_button" onclick="CalcSpellDice()">Calcular</button>
                         </div>
                     </form>
-                    <p class="result">Qtty dice</p>
-                    <p class="result">Nomenclatura</p>
+                    <p class="result" id="QttySpellDice"></p>
+                    <p class="result" id="NomSpellDice"></p>
                 </div>
             </div>
         </form>
@@ -95,14 +97,16 @@
                         </select>
                     </div>
                     <div>
-                        <input type="submit" class="form_button" value="Calcular">
+                        <input type="button" class="form_button" value="Calcular" onclick="CalcTechDice()">
                     </div>
                 </form>
-                <p class="result">Qtty dice</p>
-                <p class="result">Nomenclatura</p> 
+                <p class="result" id="QttyTechDice"></p>
+                    <p class="result" id="NomTechDice"></p>
             </div>
         </form>
     </div>
     </div>
+
+    <script src="./calculo.js"></script>
 </body>
 </html>
