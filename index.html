@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1600px)">
     <link rel="stylesheet" href="./style.css">
     <title>Calculador</title>
 </head>
@@ -15,32 +17,38 @@
         <h1>Calculadora de RE</h1>
         <img src="" alt="">
     </header>
-
+    <div class="idk">
     <div class="l-form">
         <form action="" class="form">
             <h1 class="form_title">Stats</h1>
 
             <div class="form-div">
-                <input type="text" class="form_input" placeholder="">
+                <input type="text" class="form_input" placeholder=" ">
                 <label for="" class="form_label">Fuerza</label>
             </div>
             <div class="form-div">
-                <input type="text" class="form_input" placeholder="">
+                <input type="text" class="form_input" placeholder=" ">
                 <label for="" class="form_label">Resistencia</label>
             </div>
             <div class="form-div">
-                <input type="text" class="form_input" placeholder="">
+                <input type="text" class="form_input" placeholder=" ">
                 <label for="" class="form_label">Agilidad</label>
             </div>
             <div class="form-div">
-                <input type="text" class="form_input" placeholder="">
+                <input type="text" class="form_input" placeholder=" ">
                 <label for="" class="form_label">Percepción</label>
             </div>
             <div class="form-div">
-                <input type="text" class="form_input" placeholder="">
+                <input type="text" class="form_input" placeholder=" ">
                 <label for="" class="form_label">Inteligencia</label>
             </div>
         
+            
+        </form>
+    </div>
+
+    <div class="l-form">
+        <form action="" class="form">
             <div>
                 <div>
                     <h1 class="form_title">Conjuros</h1>
@@ -55,34 +63,39 @@
                             </select>
                         </div>
                         <div>
-                            <button>Resultado</button>
+                            <input type="submit" class="form_button" value="Calcular">
                         </div>
                     </form>
                     <p>Qtty dice</p>
                     <p>Nomenclatura</p>
                 </div>
-                <div>
-                    <h1 class="form_title">Técnicas</h1>
-                    <form action="" class="form">
-                        <div class="form-div">
-                            <select name="tecnica" id="InputTechnics">
-                                <option value="Tolerar">Tolerar</option>
-                                <option value="GolpePesado">Golpe pesado</option>
-                                <option value="Sprint">Sprint</option>
-                                <option value="Deforestar">Deforestar</option>
-                                <option value="Prestidigitar">Prestidigitar</option>
-                            </select>
-                        </div>
-                        <div>
-                            <button>Resultado</button>
-                        </div>
-                    </form>
-                    <p>Qtty dice</p>
-                    <p>Nomenclatura</p> 
-                </div>
             </div>
         </form>
     </div>
 
+    <div class="l-form">
+        <form action="" class="form">
+            <div>
+                <h1 class="form_title">Técnicas</h1>
+                <form action="" class="form">
+                    <div class="form-div">
+                        <select name="tecnica" id="InputTechnics">
+                            <option value="Tolerar">Tolerar</option>
+                            <option value="GolpePesado">Golpe pesado</option>
+                            <option value="Sprint">Sprint</option>
+                            <option value="Deforestar">Deforestar</option>
+                            <option value="Prestidigitar">Prestidigitar</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" class="form_button" value="Calcular">
+                    </div>
+                </form>
+                <p>Qtty dice</p>
+                <p>Nomenclatura</p> 
+            </div>
+        </form>
+    </div>
+    </div>
 </body>
 </html>

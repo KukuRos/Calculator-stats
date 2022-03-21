@@ -1,0 +1,7 @@
+.idk{
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+    justify-content: center;
+}
