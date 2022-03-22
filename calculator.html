@@ -88,20 +88,20 @@
                 <h1 class="form_title">Técnicas</h1>
                 <form action="" class="form">
                     <div class="form-div">
-                        <select class="form_input--option" name="tecnica" id="InputTechnics" onclick="EmptyCTD()">
-                            <option value="Guillotina" id="guillotina">Guillotina</option>
-                            <option value="GolpePesado" id="golpepesado">Golpe pesado</option>
-                            <option value="RompeFilas" id="rompefilas">Rompe filas</option>
-                            <option value="MartilloCincel" id="martillocincel">Martillo y cincel</option>
-                            <option value="Nekodamashi" id="nekodamashi">Nekodamashi</option>
+                        <select class="form_input--option" name="tecnica" id="InputTechnics">
+                            <option value="Tolerar">Tolerar</option>
+                            <option value="GolpePesado">Golpe pesado</option>
+                            <option value="Sprint">Sprint</option>
+                            <option value="Deforestar">Deforestar</option>
+                            <option value="Prestidigitar">Prestidigitar</option>
                         </select>
                     </div>
                     <div>
-                        <button type="button" class="form_button" onclick="CalcTechDice()">Calcular</button>
+                        <input type="button" class="form_button" value="Calcular" onclick="CalcTechDice()">
                     </div>
                 </form>
                 <p class="result" id="QttyTechDice"></p>
-                <p class="result" id="NomTechDice"></p>
+                    <p class="result" id="NomTechDice"></p>
             </div>
         </form>
     </div>
